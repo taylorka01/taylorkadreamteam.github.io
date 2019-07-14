@@ -1,0 +1,110 @@
+/* end0f.space */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text {
+    color: #fff;
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    white-space: nowrap;
+    font-weight: 300;
+}
+
+.email {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 28px;
+    margin-top: 20px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+::selection {
+    background: #fff;
+    color: #000;
+}
+
+::-moz-selection {
+    background: #fff;
+    color: #000;
+}
+
+.links {
+    display: flex;
+    margin-top: 40px;
+}
+
+.external-link {
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    transition: .2s;
+}
+
+.external-link:active {
+    transform: scale(0.9);
+}
+
+.external-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.external-link-vk {
+    background-image: url(//res.cloudinary.com/minecraftunion/image/upload/v1560716860/vk.svg);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 20px center;
+    width: 180px;
+    justify-content: center;
+}
+
+.external-link-vk span {
+    margin: 0 0 0 40px;
+}
+
+.external-link-steam {
+    background-image: url(//res.cloudinary.com/minecraftunion/image/upload/v1560716860/steam.svg);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 20px center;
+    width: 140px;
+    justify-content: center;
+}
+
+.external-link-steam span {
+    margin: 0 0 0 45px;
+}
+
+@media screen and (max-width: 576px) {
+    .text {
+        font-size: 56px;
+    }
+}
